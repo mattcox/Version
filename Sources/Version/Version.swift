@@ -47,7 +47,7 @@ public struct Version: Sendable {
 	
 /// The version number of the current application, if available.
 ///
-	static var current: Version? {
+	public static var current: Version? {
 		guard let bundleShortVersion = Bundle.main.infoDictionary?["CFBundleShortVersionString"] as? String else {
 			return nil
 		}
